@@ -1,0 +1,1189 @@
+[
+    {
+        "id": "cd4d761ca3b0126d",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "14680b0c54234477",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V1101",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            [
+                "95a339142b09011b"
+            ]
+        ]
+    },
+    {
+        "id": "95a339142b09011b",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 40,
+        "wires": [
+            [
+                "0c3f402254c60f16"
+            ]
+        ]
+    },
+    {
+        "id": "5ddd8adb28e857ec",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V2101",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "cb782f73efc16506"
+            ]
+        ]
+    },
+    {
+        "id": "cb782f73efc16506",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "654cdb5349fa4fac"
+            ]
+        ]
+    },
+    {
+        "id": "654cdb5349fa4fac",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V2101",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3a0733696deecaf6",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V3101",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "507da7843d248452"
+            ]
+        ]
+    },
+    {
+        "id": "507da7843d248452",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "4a6f47ce7e917c22"
+            ]
+        ]
+    },
+    {
+        "id": "4a6f47ce7e917c22",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V3101",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "3788107b19df5a40",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V1102",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "4b49cbc3b4c0d4fd"
+            ]
+        ]
+    },
+    {
+        "id": "4b49cbc3b4c0d4fd",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "e20fa9431a90a86e"
+            ]
+        ]
+    },
+    {
+        "id": "e20fa9431a90a86e",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V1102",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bc4da8461382b953",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V2102",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "f21849dc78bd1f68"
+            ]
+        ]
+    },
+    {
+        "id": "f21849dc78bd1f68",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "aa3133e7ee532b81"
+            ]
+        ]
+    },
+    {
+        "id": "aa3133e7ee532b81",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V2102",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "061b9f063d735fbb",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V3102",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "03f2e258601cceee"
+            ]
+        ]
+    },
+    {
+        "id": "03f2e258601cceee",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "cd24cbe896a7703e"
+            ]
+        ]
+    },
+    {
+        "id": "cd24cbe896a7703e",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V3102",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3caa8e39750195a4",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V4101",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "3423cbb242defe23"
+            ]
+        ]
+    },
+    {
+        "id": "3423cbb242defe23",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "c164ba90259c3ca0"
+            ]
+        ]
+    },
+    {
+        "id": "c164ba90259c3ca0",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V4101",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "353dbd758cbbfd88",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V4102",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "b525cab1047f4a60"
+            ]
+        ]
+    },
+    {
+        "id": "b525cab1047f4a60",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 460,
+        "wires": [
+            [
+                "593379f1789c1c52"
+            ]
+        ]
+    },
+    {
+        "id": "593379f1789c1c52",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V4102",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3f2fc6a1cef8fcbe",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "V4103",
+        "diff": true,
+        "name": "",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "eb15d2d60e746f6f"
+            ]
+        ]
+    },
+    {
+        "id": "eb15d2d60e746f6f",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "d097647ee6ee5ee9"
+            ]
+        ]
+    },
+    {
+        "id": "d097647ee6ee5ee9",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "V4103",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "06908e5960309e02",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "W1111",
+        "diff": true,
+        "name": "",
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "f725b9abc862ac9f"
+            ]
+        ]
+    },
+    {
+        "id": "f725b9abc862ac9f",
+        "type": "ui_gauge",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "group": "4f54587924c23985",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "W1111",
+        "label": "kg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3500",
+        "className": "",
+        "x": 890,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f60f2efa049e9d16",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "W2111",
+        "diff": true,
+        "name": "",
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "2c5e2699f5e508d4"
+            ]
+        ]
+    },
+    {
+        "id": "2c5e2699f5e508d4",
+        "type": "ui_gauge",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "group": "4f54587924c23985",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "W2111",
+        "label": "kg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3500",
+        "className": "",
+        "x": 890,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7279875cd615f6bb",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "W3111",
+        "diff": true,
+        "name": "",
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "a8eb7f36a304ba2d"
+            ]
+        ]
+    },
+    {
+        "id": "a8eb7f36a304ba2d",
+        "type": "ui_gauge",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "group": "4f54587924c23985",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "W3111",
+        "label": "kg",
+        "format": "{{value}} ",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3500",
+        "className": "",
+        "x": 890,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0c3f402254c60f16",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "f98f19665d581645",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "V1101",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 530,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fe82ecc51887a29d",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "AGR5101",
+        "diff": true,
+        "name": "",
+        "x": 100,
+        "y": 600,
+        "wires": [
+            [
+                "8f3b9829fc860c63"
+            ]
+        ]
+    },
+    {
+        "id": "b49a2387e4734ff7",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "PUMP4121",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "ebf8ccac834e80b0"
+            ]
+        ]
+    },
+    {
+        "id": "929dc85c7c93724f",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "949be48ab5cfb4b0",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "AGR5101",
+        "label": "AGR5101",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 560,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "af459fbddb2a7b3e",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "949be48ab5cfb4b0",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "PUMP4121",
+        "label": "PUMP4121",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 590,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8f3b9829fc860c63",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "929dc85c7c93724f"
+            ]
+        ]
+    },
+    {
+        "id": "ebf8ccac834e80b0",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 680,
+        "wires": [
+            [
+                "af459fbddb2a7b3e"
+            ]
+        ]
+    },
+    {
+        "id": "8a63152c7a4e4f41",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "L4141",
+        "diff": true,
+        "name": "L4141",
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "cf2d379f385f10d8"
+            ]
+        ]
+    },
+    {
+        "id": "cf2d379f385f10d8",
+        "type": "ui_gauge",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "group": "3b99133fd34d960c",
+        "order": 2,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "L4141",
+        "label": "kg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3500",
+        "className": "",
+        "x": 850,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "befebd6a5f70710d",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "L5141",
+        "diff": true,
+        "name": "",
+        "x": 650,
+        "y": 1000,
+        "wires": [
+            [
+                "6bd3afe40818059b"
+            ]
+        ]
+    },
+    {
+        "id": "6bd3afe40818059b",
+        "type": "ui_gauge",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "group": "3b99133fd34d960c",
+        "order": 3,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "L5141",
+        "label": "kg",
+        "format": "{{value}} ",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1500",
+        "seg2": "3500",
+        "className": "",
+        "x": 850,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "09ae4840a0521180",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "Start",
+        "diff": true,
+        "name": "Machine Mode",
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "6b4efbe317970f1b"
+            ]
+        ]
+    },
+    {
+        "id": "be4a40a0b7af977f",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "152905cfba249d45",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mode",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1130,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "92b7880421a847eb",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "Start",
+        "diff": true,
+        "name": "Switch",
+        "x": 690,
+        "y": 400,
+        "wires": [
+            [
+                "9f4ba29a8748f287"
+            ]
+        ]
+    },
+    {
+        "id": "6b4efbe317970f1b",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"MANUAL\";\n}\nelse{\n    msg.payload = \"AUTO\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [
+                "be4a40a0b7af977f"
+            ]
+        ]
+    },
+    {
+        "id": "9f4ba29a8748f287",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 400,
+        "wires": [
+            [
+                "8f5ca1aa8c680fd1"
+            ]
+        ]
+    },
+    {
+        "id": "8f5ca1aa8c680fd1",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "152905cfba249d45",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Switch",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 970,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b605adeb8391877c",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "Filling Machine",
+        "diff": true,
+        "name": "",
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "295e677357ae8cdb"
+            ]
+        ]
+    },
+    {
+        "id": "295e677357ae8cdb",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 740,
+        "wires": [
+            [
+                "7e7406c40db652d3"
+            ]
+        ]
+    },
+    {
+        "id": "7e7406c40db652d3",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "949be48ab5cfb4b0",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Filling Machine",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "960f02ae57d900be",
+        "type": "s7 in",
+        "z": "cd4d761ca3b0126d",
+        "endpoint": "cfb05424890a34f6",
+        "mode": "single",
+        "variable": "Pasteurising Machine",
+        "diff": true,
+        "name": "",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "a854abc1fe9884ed"
+            ]
+        ]
+    },
+    {
+        "id": "a854abc1fe9884ed",
+        "type": "function",
+        "z": "cd4d761ca3b0126d",
+        "name": "",
+        "func": "if(msg.payload == false){\n    msg.payload = \"OFF\";\n}\nelse{\n    msg.payload = \"ON\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 800,
+        "wires": [
+            [
+                "aff46e8990eecdbf"
+            ]
+        ]
+    },
+    {
+        "id": "aff46e8990eecdbf",
+        "type": "ui_text",
+        "z": "cd4d761ca3b0126d",
+        "group": "949be48ab5cfb4b0",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pasteurising Machine",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "cfb05424890a34f6",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.200.3",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "2000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB1,X0.1",
+                "name": "V1101"
+            },
+            {
+                "addr": "DB1,X0.2",
+                "name": "V2101"
+            },
+            {
+                "addr": "DB1,X0.3",
+                "name": "V3101"
+            },
+            {
+                "addr": "DB1,X0.4",
+                "name": "V1102"
+            },
+            {
+                "addr": "DB1,X0.5",
+                "name": "V2102"
+            },
+            {
+                "addr": "DB1,X0.6",
+                "name": "V3102"
+            },
+            {
+                "addr": "DB1,X0.7",
+                "name": "V4101"
+            },
+            {
+                "addr": "DB1,X1.0",
+                "name": "V4102"
+            },
+            {
+                "addr": "DB1,X1.1",
+                "name": "V4103"
+            },
+            {
+                "addr": "DB1,REAL2",
+                "name": "W1111"
+            },
+            {
+                "addr": "DB1,REAL6",
+                "name": "W2111"
+            },
+            {
+                "addr": "DB1,REAL10",
+                "name": "W3111"
+            },
+            {
+                "addr": "DB1,X18.0",
+                "name": "AGR5101"
+            },
+            {
+                "addr": "DB1,X18.1",
+                "name": "PUMP4121"
+            },
+            {
+                "addr": "DB1,REAL14",
+                "name": "L4141"
+            },
+            {
+                "addr": "DB1,REAL20",
+                "name": "L5141"
+            },
+            {
+                "addr": "DB3,X0.0",
+                "name": "AutoOn"
+            },
+            {
+                "addr": "DB3,X0.1",
+                "name": "Start"
+            },
+            {
+                "addr": "DB1,X18.3",
+                "name": "Filling Machine"
+            },
+            {
+                "addr": "DB1,X25.2",
+                "name": "Pasteurising Machine"
+            }
+        ]
+    },
+    {
+        "id": "f98f19665d581645",
+        "type": "ui_group",
+        "name": "Valves",
+        "tab": "98eeab4bc7e9bd3d",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4f54587924c23985",
+        "type": "ui_group",
+        "name": "Tanks",
+        "tab": "98eeab4bc7e9bd3d",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "949be48ab5cfb4b0",
+        "type": "ui_group",
+        "name": "Other machines",
+        "tab": "98eeab4bc7e9bd3d",
+        "order": 4,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b99133fd34d960c",
+        "type": "ui_group",
+        "name": "Sensor values",
+        "tab": "98eeab4bc7e9bd3d",
+        "order": 5,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "152905cfba249d45",
+        "type": "ui_group",
+        "name": "Initialisation",
+        "tab": "98eeab4bc7e9bd3d",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "98eeab4bc7e9bd3d",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "Valve",
+        "disabled": false,
+        "hidden": false
+    }
+]
