@@ -1,4 +1,4 @@
-# Milk Mixing System
+# Milk Flavour Mixing Plant Simulation
 This repository discusses about the project I created during my internship in Siemens India.
 </br>
 It is a simulation of a flavoured milk mixing plant in reference to these two video:
